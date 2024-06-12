@@ -1,0 +1,142 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header, main, aside {
+    padding: 1em;
+}
+
+header nav, aside nav {
+    background-color: #333;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+header nav ul, aside nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li, aside nav ul li {
+    margin-bottom: 0.5em;
+}
+
+header nav ul li a, aside nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover, aside nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar specific styles */
+header nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    padding: 2em;
+    background-color: white;
+    margin: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* article */
+article h2 {
+    color: #333;
+}
+
+dl dt {
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+dl dd {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+dl ul {
+    list-style-type: disc;
+    margin-left: 2em;
+}
+
+/* about */
+
+.about h1, .about h2 {
+    color: #333;
+}
+
+.about p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+/* Sidebar */
+aside {
+    background-color: #f4f4f4;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+aside nav h3 {
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+aside nav ul li {
+    margin-bottom: 0.5em;
+}
+
+aside nav ul li a {
+    color: #333;
+}
+
+aside nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* footer */
+footer {
+    background-color: brown;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.connect {
+    margin-bottom: 1em;
+}
+
+.connect a {
+    margin: 0 0.5em;
+    display: inline-block;
+}
+
+.connect img {
+    width: 48px;
+    height: 48px;
+}
+
+footer p {
+    margin: 0;
+}
+
+#footer-wix {
+    text-align: center;
+}

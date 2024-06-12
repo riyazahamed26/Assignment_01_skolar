@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Example</title>
+</head>
+<body>
+
+    <h1>User Information Form</h1>
+
+    <form action="submit_form.php" method="post" onsubmit="return showSuccessMessage()">
+        <!-- Name Input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <!-- Gender Selection -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <!-- Country Selection -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select a country</option>
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="australia">Australia</option>
+            <option value="india">India</option>
+            <option value="germany">Germany</option>
+            <option value="france">France</option>
+            <option value="japan">Japan</option>
+            <option value="china">China</option>
+            <option value="brazil">Brazil</option>
+            <option value="south_africa">South Africa</option>
+            <option value="mexico">Mexico</option>
+            <option value="italy">Italy</option>
+            <option value="spain">Spain</option>
+            <!-- Add more options as needed -->
+        </select>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="success-message" style="display:none;">Form successfully submitted!</p>
+
+    <script>
+        function showSuccessMessage() {
+            document.getElementById('success-message').style.display = 'block';
+            return true; // to allow form submission
+        }
+    </script>
+
+</body>
+</html>

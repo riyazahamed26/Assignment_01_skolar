@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 5 Favorite Movies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        ol {
+            counter-reset: movie-counter;
+        }
+        ol > li {
+            margin-bottom: 20px;
+            counter-increment: movie-counter;
+        }
+        ol > li::before {
+            content: counter(movie-counter) ". ";
+            font-weight: bold;
+        }
+        ul {
+            list-style-type: disc;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Top 5 Favorite Movies</h1>
+    <ol>
+        <li>
+            Remo
+            <ul>
+                <li><strong>Year Released:</strong> 2016</li>
+                <li><strong>Main Actors:</strong> Siva karthikeyan </li>
+                <li><strong>Description:</strong>A love-struck aspiring actor disguises himself as a female nurse to win the heart of his lady love, leading to a series of humorous and touching events.
+
+                </li>
+            </ul>
+        </li>
+        <li>
+            Romeo
+            <ul>
+                <li><strong>Year Released:</strong> 2024</li>
+                <li><strong>Main Actors:</strong>Vijay Antony</li>
+                <li><strong>Description:</strong> A man fakes amnesia to escape his arranged marriage but ends up falling for his intended bride, leading to comedic misunderstandings.</li>
+            </ul>
+        </li>
+        <li>
+            Dasara
+            <ul>
+                <li><strong>Year Released:</strong> 2023</li>
+                <li><strong>Main Actors:</strong>Nani</li>
+                <li><strong>Description:</strong> A rugged coal miner from Telangana gets embroiled in local politics and a violent conflict to protect his friends and love interest during the Dasara festival.</li>
+            </ul>
+        </li>
+        <li>
+            Maveeran
+            <ul>
+                <li><strong>Year Released:</strong> 2023</li>
+                <li><strong>Main Actors:</strong>Siva Karthikeyan</li>
+                <li><strong>Description:</strong> A valiant warrior fights against tyranny and oppression in a fictional kingdom, rising from an ordinary man to a heroic figure leading a rebellion.</li>
+            </ul>
+        </li>
+        <li>
+            Theri
+            <ul>
+                <li><strong>Year Released:</strong> 2016</li>
+                <li><strong>Main Actors:</strong>Vijay</li>
+                <li><strong>Description:</strong>A former police officer living under a new identity is forced back into action to protect his daughter from old enemies, combining high-octane action with emotional depth.</li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>
